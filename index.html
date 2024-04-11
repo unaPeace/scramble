@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="game-over">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <div class="game-error">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Ooops!</h4>
+            <p><b>rainbow</b> is incorrect</p>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Scramble</h1>
+        </div>
+        <div class="game-box">
+            <h4 class="scramble-text"><b></b></h4>
+            <input autofocus type="text" spellcheck="false" placeholder="Enter a valid word" class="word-input" id="wordInput">
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="time">Time Left: <span><b></b>s</span></h4>
+            <div class="keyboard"></div>
+            <div class="game-btn">
+                <button class="refresh-word">Reset</button>
+                <button class="backspace">Backspace</button>
+                <button class="check-word">Check Word</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
